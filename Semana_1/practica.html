@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./practicas.js"></script>
+</head>
+
+<body>
+
+
+    <p id="mensaje">Hola mundo</p>
+    <button id="boton">Cambiar texto</button>
+
+    <script>
+        const boton = document.getElementById("boton");
+        const mensaje = document.getElementById("mensaje");
+
+        boton.addEventListener("click", () => {
+            mensaje.textContent = "Texto cambiado con DOM";
+            mensaje.style.color = "blue";
+        });
+    </script>
+
+</body>
+
+</html>
