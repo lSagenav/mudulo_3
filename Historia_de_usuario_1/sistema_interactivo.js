@@ -30,7 +30,7 @@ while (true) {
 }
 
 // ==========================================
-// TASK 4: Mensajes Dinámicos
+//  Mensajes Dinámicos
 // ==========================================
 
 if (edadUsuario < 18) {
