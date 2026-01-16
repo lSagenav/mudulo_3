@@ -1,0 +1,13 @@
+#pantalla {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #fb0000;
+    border-radius: 8px;
+    font-family: sans-serif;
+    background-color: #2fd150;
+    display: inline-block;
+}
+
+.btn{
+    background-color: blue;
+}
