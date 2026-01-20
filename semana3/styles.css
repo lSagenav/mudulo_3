@@ -1,0 +1,27 @@
+
+
+body {
+    background-color: #e0e0e0; /* Color de fondo de la página */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#title {
+    color: #333;
+}
+
+/* Estilo para la lista */
+#listaTareas {
+    margin-top: 20px;
+    list-style: none; /* Quita los puntos por defecto */
+    padding: 0;
+}
+
+/* Estilo para cada tarea nueva */
+li {
+    background: white;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    border-left: 5px solid red; /* Una barrita roja a la izquierda */
+}
