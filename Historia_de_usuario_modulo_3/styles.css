@@ -1,0 +1,152 @@
+/* ==========================================
+   1. CONFIGURACIONES GENERALES
+   ========================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    color: #333;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+}
+
+/* ==========================================
+   2. GRUPO DE ENTRADA (INPUT Y BOTÓN)
+   ========================================== */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #3498db;
+}
+
+button#btnAgregar {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button#btnAgregar:hover {
+    background-color: #2980b9;
+}
+
+/* ==========================================
+   3. ESTILOS DE LA LISTA (DOM)
+   ========================================== */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra verticalmente el botón con el texto */
+    gap: 15px;
+    transition: background 0.2s;
+    
+    /* Solución para textos largos */
+    word-break: break-word;
+    overflow-wrap: break-word;
+    text-align: left;
+    line-height: 1.4;
+}
+
+li:hover {
+    background: #f9f9f9;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+/* Botón Eliminar dentro de la lista */
+li button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    /* Evita que el botón se deforme */
+    flex-shrink: 0; 
+    white-space: nowrap; 
+}
+
+li button:hover {
+    background-color: #c0392b;
+}
+
+/* ==========================================
+   4. RESPONSIVIDAD (MEDIA QUERIES)
+   ========================================== */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    input, button#btnAgregar {
+        width: 100%;
+    }
+
+    /* En móviles muy pequeños, el botón baja para dar espacio al texto */
+    li {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    li button {
+        align-self: flex-end; /* Mantiene el botón a la derecha en móvil */
+    }
+}
