@@ -1,0 +1,19 @@
+{
+  "productos": [
+    {
+      "id": "7054",
+      "nombre": "moto",
+      "precio": "1566416516"
+    },
+    {
+      "id": "f4c2",
+      "nombre": "carro",
+      "precio": "44654651645"
+    },
+    {
+      "nombre": "Sicla de deporte GM",
+      "precio": "7750000",
+      "id": "152c"
+    }
+  ]
+}
